@@ -10,10 +10,15 @@ In this algorithm, we select a pivot element and use it to create smaller subarr
 
 # Algorithm Analysis 
 •	The algorithm starts by checking the size of the array. If less than 5, then it sorts the array and returns the kth element. 
+
 •	If size of arrays is larger than 5, then the algorithm divides the array into groups of 5 elements. Then it calculates the median of all the groups.
+
 •	After processing all the groups, it calculates the median of all the medians from smaller groups. 
+
 •	Now, the median of medians is used as the pivot element to partition the array into three parts, Ones that are less than pivot, Ones that are equal to pivot, and Ones that are greater than pivot. 
+
 •	Now depending on the given element k, the program makes recursive calls to select one of the 3 divisions created by pivot element. 
+
 •	After division selection and processing, the algorithm returns the result.
 
 # Experimental Analysis 
